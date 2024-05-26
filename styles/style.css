@@ -28,3 +28,17 @@ nav  li a{
     text-decoration: none;
     color: darkslategray;
 }
+/* banner styles */
+.banner-content{
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto;
+}
+.banner-title{
+    font-size: 4rem;
+    font-weight: 700;
+    color: #131313;
+}
+.banner-description{
+    color: rgb(114, 114, 114);;
+}
