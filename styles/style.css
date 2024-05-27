@@ -1,44 +1,88 @@
-.nav-title{
+/* shared styled */
+.btn-primary {
+    border-radius: 8px;
+    background-color: #ff900e;
+    padding: 20px 25px;
+    color: #ffff;
+    font-size: 1.25rem;
+    font-weight: 600;
+    cursor: pointer;
+    border: 0 ;
+}
+
+.nav-title {
     font-weight: 800;
     font-size: 2.8rem;
     color: rgb(46, 44, 44);
 }
+
 /* header styles */
-header{
-background: rgba(255, 144, 14, 0.1);
-padding: 50px 240px;
+header {
+    background: rgba(255, 144, 14, 0.1);
+    padding: 50px 240px;
 
 }
-nav{
+
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-nav > ul{
+
+nav>ul {
     display: flex;
 
 }
-nav li{
+
+nav li {
     list-style: none;
     margin-right: 30px;
     font-weight: 500;
     font-size: 1rem;
 }
-nav  li a{
+
+nav li a {
     text-decoration: none;
     color: darkslategray;
 }
+
 /* banner styles */
-.banner-content{
+.banner-content {
     max-width: 800px;
     text-align: center;
     margin: 0 auto;
 }
-.banner-title{
+
+.banner-title {
     font-size: 4rem;
     font-weight: 700;
     color: #131313;
 }
-.banner-description{
-    color: rgb(114, 114, 114);;
+
+.banner-description {
+    color: rgb(114, 114, 114);
+    ;
+}
+.banner-pro-pic{
+    width: 100%;
+}
+/* responsive styles */
+@media screen and (max-width:576px) {
+    header{
+        padding: 20px;
+    }
+    nav{
+        flex-direction: column;
+    }
+    
+}
+/* medium devices responsive */
+@media screen and (min-width:576px) and (max-width:992px) {
+    nav{
+        flex-direction: column;
+    }
+    header{
+        padding: 40px;
+    }
+    
 }
