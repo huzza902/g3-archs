@@ -78,8 +78,8 @@ nav li a {
     gap: 1.5rem;
 }
 .team-content{
-    padding-left: 70px;
-    padding-right: 70px;
+    padding-left: 20px;
+    padding-right: 20px;
 
 }
 .team-content .list{
@@ -125,11 +125,14 @@ main{
 }
 /* medium devices responsive */
 @media screen and (min-width:576px) and (max-width:992px) {
-    nav{
+    
+    nav , .team-container{
         flex-direction: column;
     }
     header{
         padding: 40px;
     }
+  
+
     
 }
