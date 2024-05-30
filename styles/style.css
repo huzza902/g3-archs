@@ -59,20 +59,67 @@ nav li a {
     color: #131313;
 }
 
-.banner-description {
+.text-color {
     color: rgb(114, 114, 114);
     ;
 }
 .banner-pro-pic{
     width: 100%;
 }
+/* team sstyles */
+.team-container{
+    display: flex;
+    align-items: center;
+
+}
+.team-pic-container{
+    display: grid;
+    grid-template-columns: repeat(2 ,1fr);
+    gap: 1.5rem;
+}
+.team-content{
+    padding-left: 70px;
+    padding-right: 70px;
+
+}
+.team-content .list{
+    font-weight: 500;
+    color: rgb(114, 114, 114);
+}
+.team-content .our{
+    font-weight: 700;
+
+}
+.team-content .team-feature{color: #ff900e; }
+/* feature styles */
+.feature-container{
+display: flex;
+align-items: center;
+
+gap: 40px;
+}
+
+/* main styles */
+main{
+    max-width: 1440px;
+    margin: 70px auto;
+}
 /* responsive styles */
 @media screen and (max-width:576px) {
     header{
         padding: 20px;
     }
-    nav{
+    nav,
+    .team-container
+
+    {
         flex-direction: column;
+        
+    }
+
+    .team-pic-container{
+        grid-template-columns: 1fr;
+        width: 100%;
     }
     
 }
