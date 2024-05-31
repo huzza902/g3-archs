@@ -12,7 +12,7 @@
 
 .text-color {
     color: rgb(114, 114, 114);
-   text-align: center;
+    text-align: center;
 
 
 }
@@ -108,9 +108,53 @@ nav li a {
 /* feature styles */
 .feature-container {
     display: flex;
+    margin-top: 130px;
     align-items: center;
 
-    gap: 40px;
+    gap: 100px;
+}
+
+
+.feature-content .section-title {
+    border-left: 5px solid #ff900e;
+}
+
+.feature-content .card {
+    border-radius: 8px;
+    gap: 20px;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    background: rgb(255, 255, 255);
+    padding: 30px;
+    margin-bottom: 20px;
+}
+
+.badge {
+    border-radius: 8px;
+    color: white;
+    background: rgb(255, 144, 14);
+    width: 340px;
+    padding: 40px;
+    text-align: center;
+    position: relative;
+    bottom: 100px;
+}
+
+.feature-photo {
+    height: 90%;
+    margin-left: 90px;
+
+}
+
+.badge h2 {
+    font-weight: 700;
+    font-size: 4rem;
+    margin: 0;
+}
+
+.badge p {
+    font-weight: 500;
+    font-size: 1.5rem;
+
 }
 
 /* main styles */
@@ -156,6 +200,22 @@ main {
     width: 165px;
 
 }
+.foot{
+    color: rgb(66, 66, 66);
+
+font-size: 1.25rem;
+font-weight: 400;
+line-height: 23px;
+letter-spacing: 0%;
+text-align: center;
+padding-bottom: 40px;
+border-radius: 8px;
+width: 1440px;
+height: 100px;
+
+
+background: rgb(255, 244, 231);
+}
 
 /* responsive styles */
 @media screen and (max-width:576px) {
@@ -164,14 +224,26 @@ main {
     .facts-card-container {
         padding: 20px;
     }
+    .badge{
+        position: static;
+        max-width: 300px;
+    }
 
     nav,
     .team-container,
+    .feature-container,
     .facts-card-container,
     .sponsor-image-container {
         flex-direction: column;
 
     }
+
+    .feature-photo {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    
 
     .sponsor-image-container {
         /* width: 165px; */
@@ -193,6 +265,7 @@ main {
 
     nav,
     .team-container,
+    .feature-container,
     .facts-card-container {
         flex-direction: column;
     }
